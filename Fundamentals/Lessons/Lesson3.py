@@ -19,6 +19,7 @@ elif(i<0):
 else:
     print 'zero'
 
+print ''
 print'####################################################################'
 # if-elif-else example
 
@@ -82,7 +83,7 @@ print ''
 ## another way is to read shuttles list and enumerate into index and value 
 for index, value in enumerate(shuttles):
         print index, value
-        
+print''        
 #####################################################################
         
 # nested for loop, we use the xrange function to save memory      
