@@ -1,0 +1,84 @@
+
+# this lesson is on strings copy & paste the print statements on to the interpreter 
+# use single quotes
+print 'welcome to the python language'
+
+# use can also use double quotes
+print "welcome to the python language"
+
+# note the quotes must match
+#  print 'welcome to the python language" WILL GIVE YOU AN ERROR
+
+# adding strings
+
+print 'Albert ' + 'Einstein'
+
+# this is an empty string
+print ''
+
+# you can use the * operator BUT NOT THE + operator 
+print 'CT' * 5
+
+# using multilne strings  . PLEASE NOTE NEWLINE IS OS DEPENDENT
+
+print ' one\ntwo\nthree\tfour'
+
+print '\n'
+
+# format the print to test what you require
+print 'one\ttwo\nthree\tfour'
+
+# basically anything can go here if you use triple quotes
+print ''' cgdsu\ncgsuycbcusd'cbb'isd
+hbsdcd"sdcs\tdbc"sdjh
+cbcbcjhsdchjsdhdhs'''
+
+print ''
+# string formatting using %f,%d and %s
+elephants = 3
+gorillas = 2
+snakes = 12
+s = 'great'
+print 'there are %f elephants, %f gorillas, %d snakes and its %s ' %(elephants,gorillas,snakes,s)
+
+print ''
+
+# assign s  a string
+s = 'Hi there python i think its a very practical language to learn, you can do great things with it'
+
+print s[0]
+
+print s[2]
+
+print s[7]
+
+print ''
+
+
+# slicing a string
+
+print s[1:9]
+print s[4:24]
+
+print ''
+
+# import the string module
+
+import string
+
+print ''
+
+# find number of t letters in s
+print s.find('t')
+print ''
+#split() function breaks a string down into substrings. Note string is an object
+# access method using object.method() ie s.split(''), s.lower(), s.upper()
+print s.split(' ')
+print ''
+print s.lower()
+print ''
+print s.upper()
+
+
+
+
