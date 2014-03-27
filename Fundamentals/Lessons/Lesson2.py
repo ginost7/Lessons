@@ -1,6 +1,6 @@
 
 # this lesson is on strings copy & paste the print statements on to the interpreter 
-# use single quotes
+# use single quotes. Answer the first 4 questions
 print 'welcome to the python language'
 
 # use can also use double quotes
@@ -102,79 +102,60 @@ print''
 
 #####################   EXERCISES  ##########################################
 
-# ex1
-# here are 4  strings s1,s2,s3 and s4, what are the outputs of the print statements?
+#ex2_1
+# lets manipulate this well known string
+test = 'supercalifragilisticexpialidocious'
 
-s1 = 'i love python, its fantastic language to learn'
-s2 = s1
-s3 = 'i love python, its fantastic language to learn'
-s4 = 'yes'
+# there are quite a few string functions in the string library
+# what do you think the output to the following is? test them after :
 
-#a)print s1 == s2
-#b)print s2.count('o')
-#c)print id(s1) == id(s2)
-#d)print id(s1) == id(s3)
-#e)print s1<= s4
-#f)print s2>= s4
-#g)print s1!= s4
-#h)print s1.upper()
-#i)print s2.find(s4)
-#j)print s1[4]
-#k)print s1[4:8]
-#l)print 4* s4
-#m)print len(s1)
-#n)print max(s1)
-#o)print min(s1)
-#p)print s1[-4]
-#q)print s1.lower()
-#r)print s1.rfind('o')
-#s)print s1.startswith("o")
-#t)print s1.endswith("o")
-#u)print s1.isalpha()
-#v)print s1+s2
-#w)print ((s1 + ' oh my god!\n') * 3)
-
-#############################################################################
-#ex2
-# what does the following  for loops 'string traversal 'print out?
-#a)
-#
-#for achar in 'hi these exercies are easy!':
-#    print(achar)
-#
-#b)
-#
-#for ListName in ['joe','gino','lino','omar','putin','boris','gordon']:
-#    invite = 'hi there ' + ListName + '.  lets get together for a code session!'
-#    print(invite)
-#
-#############################################################################
-#ex3
-#
-#What is printed by the following statements?
-#s = "ball"
-#r = ""
-#for item in s:
-#    r = item.upper() + r
-#print(r)
-#
-#############################################################################
-#ex4
-#
-#Write a program from the python prompt that checks if a string is palindrome or not
-#
-#ex5
-# What is the output of this program? 
-#
-#vowels = "aeiou"
-#for v in vowels:
-#  if v in "uranium":
-#      print v
-#
-#
-                  
+print test.split('s')
+print test.swapcase()
+print test.upper()
+print test.lower
+print test.rjust(20) 
 
 
+############################################################
+
+#ex2_2
+# examples of manipulating the  library strings methods, find out what the print
+# statements do and test them at the prompt
+
+a= "my first test string"
+b= "another test string is created"
+c= "this string belongs to gino"
+d= 'my favourite vegetable  is " carrots" what is yours?'
+math_string = "3+4*2"
+express_string = "a' + '+b+'  tiger"
+
+
+
+print len(a)            # length a
+print len(math_string)  # length of math_string
+print a+b               # concatenate 2 strings
+print b+a               # this does the same in the other way
+print math_string + express_string   # another string add
+print b.split('t')      # splits the string at t
+print math_string.find('*') # where is the 8 character
+print math_string.find('3')
+print c.replace('i','o')    # replace i with o
+print eval(math_string)     # gives us 11
+
+####################################################################
+#ex2_3
+# Write a script that asks the user to type in a string and tells the user how
+# long that string is
+
+########################################################################
+
+#ex2_4
+# write a script that asks the user for a string, then a number. It then
+# prints out the string that many times
+#################################################################
+
+#ex2_5
+# ask the user to input a string and check if its a palindrome
 
 
 
